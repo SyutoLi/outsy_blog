@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title of the Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <!-- Include Navbar -->
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <div class="main-content">
+        <header class="text-center">
+            <!-- Check if Picture is Provided -->
+            {% if site.params.index.picture %}
+                <img src="{{ site.params.index.picture | urlize | relURL }}" class="rounded-circle text-center index-image">
+            {% endif %}
+            <h1 class="index-title">{{ site.params.index.title }}</h1>
+        </header>
+
+        <section class="text-center">
+            <!-- Check if Subtitle is Provided -->
+            {% if site.params.index.subtitle %}
+                <h3 class="index-sub">{{ site.params.index.subtitle }}</h3>
+            {% endif %}
+            <!-- Check if Markdown Text is Provided -->
+            {% if site.params.index.mdtext %}
+                <h6 class="index-text">{{ site.params.index.mdtext | markdownify }}</h6>
+            {% endif %}
+        </section>
+    </div>
+
+    <!-- Include Social Links -->
+    {% include "_shared/social.html" %}
+
+    <!-- Include Alertbar if Provided -->
+    {% if site.params.index.alertbar %}
+        {% include "_shared/alertbar.html" %}
+    {% endif %}
+
+    <!-- Footer Section -->
+    <footer>
+        <!-- Include Footer -->
+        {% include "_shared/footer.html" %}
+    </footer>
+
+</body>
+</html>

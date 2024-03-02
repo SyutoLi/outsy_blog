@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Outsy露營日誌</title>
+    <link>http://localhost:1313/posts/</link>
+    <description>Recent content in Posts on Outsy露營日誌</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <copyright>John Doe - All rights reserved</copyright>
+    <lastBuildDate>Wed, 28 Feb 2024 23:07:03 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mfp</title>
+      <link>http://localhost:1313/posts/mfp/</link>
+      <pubDate>Wed, 28 Feb 2024 23:07:03 +0800</pubDate>
+      <guid>http://localhost:1313/posts/mfp/</guid>
+      <description>介紹 This is bold text, and this is emphasized text.&#xA;Visit the hugo website!</description>
+    </item>
+  </channel>
+</rss>
